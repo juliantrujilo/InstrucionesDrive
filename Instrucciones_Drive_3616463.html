@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instrucciones Drive · Ficha 3616463 · Instituto María Auxiliadora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde: #39a900;
+    --verde-dark: #2d8600;
+    --verde-light: #e8f5e0;
+    --verde-mid: #b8e090;
+    --naranja: #e07b00;
+    --naranja-light: #fff3e0;
+    --azul: #1565c0;
+    --azul-light: #e3f2fd;
+    --gris-bg: #f5f6f8;
+    --gris-borde: #e0e3e8;
+    --gris-texto: #5a6475;
+    --oscuro: #1a1f2e;
+    --blanco: #ffffff;
+    --radio: 12px;
+    --sombra: 0 2px 12px rgba(0,0,0,0.08);
+    --sombra-hover: 0 6px 24px rgba(57,169,0,0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--gris-bg);
+    color: var(--oscuro);
+    min-height: 100vh;
+  }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--oscuro);
+    color: #fff;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+  }
+  .topbar-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--verde);
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .topbar-sep { color: #444; }
+  .topbar-chip {
+    background: rgba(57,169,0,0.18);
+    color: var(--verde-mid);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--oscuro) 0%, #1e3a1e 60%, #2d5a1e 100%);
+    color: #fff;
+    padding: 52px 24px 44px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--verde);
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .hero h1 span { color: var(--verde-mid); }
+  .hero-sub {
+    color: #a8b8a8;
+    font-size: 14px;
+    margin-bottom: 28px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--verde);
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-link:hover { background: var(--verde-dark); transform: translateY(-2px); }
+
+  /* ── NAV PILLS ── */
+  .nav-pills {
+    display: flex;
+    gap: 8px;
+    padding: 20px 24px 0;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .nav-pill {
+    background: var(--blanco);
+    border: 1.5px solid var(--gris-borde);
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gris-texto);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .nav-pill:hover, .nav-pill.active {
+    background: var(--verde);
+    border-color: var(--verde);
+    color: #fff;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* ── AVISO VIRTUAL ── */
+  .aviso-virtual {
+    background: var(--azul-light);
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--oscuro);
+    line-height: 1.6;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .aviso-virtual strong { color: var(--azul); }
+
+  /* ── SECTION CARD ── */
+  .section-card {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--gris-borde);
+  }
+  .section-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--verde-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .section-title { font-size: 15px; font-weight: 700; }
+  .section-subtitle { font-size: 12px; color: var(--gris-texto); margin-top: 2px; }
+  .section-body { padding: 24px; }
+
+  /* ── ÁRBOL INTERACTIVO ── */
+  .tree { font-size: 13px; line-height: 1.5; }
+  .tree-item { margin: 0; padding: 0; }
+  .tree-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.12s;
+    user-select: none;
+  }
+  .tree-row:hover { background: var(--verde-light); }
+  .tree-toggle {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: var(--gris-borde);
+    color: var(--gris-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background 0.12s, transform 0.15s;
+  }
+  .tree-row.open .tree-toggle { background: var(--verde); color: #fff; }
+  .tree-row.leaf { cursor: default; }
+  .tree-row.leaf:hover { background: transparent; }
+  .tree-icon { font-size: 15px; flex-shrink: 0; }
+  .tree-label { font-weight: 500; }
+  .tree-label.bold { font-weight: 700; color: var(--oscuro); }
+  .tree-badge {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .badge-read { background: #fff3e0; color: #e07b00; }
+  .badge-upload { background: var(--verde-light); color: var(--verde-dark); }
+  .tree-children {
+    padding-left: 24px;
+    display: none;
+    border-left: 2px solid var(--gris-borde);
+    margin-left: 19px;
+  }
+  .tree-children.open { display: block; }
+  .tree-file {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: var(--gris-texto);
+    border-radius: 5px;
+  }
+  .tree-file:hover { background: var(--gris-bg); color: var(--oscuro); }
+  .tree-arrow {
+    font-size: 11px;
+    color: var(--gris-texto);
+    margin-left: auto;
+    font-weight: 600;
+  }
+
+  /* ── STEPPER ── */
+  .stepper-progress {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 24px;
+    padding: 0 8px;
+  }
+  .step-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--gris-borde);
+    background: var(--blanco);
+    color: var(--gris-texto);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+  }
+  .step-dot.active {
+    border-color: var(--verde);
+    background: var(--verde);
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(57,169,0,0.15);
+  }
+  .step-dot.done {
+    border-color: var(--verde);
+    background: var(--verde-light);
+    color: var(--verde-dark);
+  }
+  .step-line { flex: 1; height: 2px; background: var(--gris-borde); transition: background 0.3s; }
+  .step-line.done { background: var(--verde); }
+  .stepper-content { min-height: 160px; }
+  .step-panel { display: none; animation: fadeIn 0.25s ease; }
+  .step-panel.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .step-card {
+    background: var(--gris-bg);
+    border-radius: 10px;
+    padding: 20px 22px;
+    border-left: 4px solid var(--verde);
+    margin-bottom: 16px;
+  }
+  .step-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--verde);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .step-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .step-text { font-size: 13px; color: var(--gris-texto); line-height: 1.6; }
+  .step-tip {
+    margin-top: 12px;
+    background: var(--azul-light);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--azul);
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .stepper-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gris-borde);
+  }
+  .step-counter { font-size: 12px; color: var(--gris-texto); font-weight: 500; }
+  .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-primary { background: var(--verde); color: #fff; }
+  .btn-primary:hover { background: var(--verde-dark); }
+  .btn-primary:disabled { background: var(--gris-borde); color: var(--gris-texto); cursor: default; }
+  .btn-outline { background: transparent; color: var(--verde); border: 1.5px solid var(--verde); }
+  .btn-outline:hover { background: var(--verde-light); }
+  .btn-outline:disabled { color: var(--gris-borde); border-color: var(--gris-borde); cursor: default; }
+
+  /* ── TABS ── */
+  .tabs-header {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--gris-borde);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tabs-header::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    padding: 11px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gris-texto);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tab-btn:hover { color: var(--verde); }
+  .tab-btn.active { color: var(--verde); border-bottom-color: var(--verde); }
+  .tab-badge { font-size: 10px; padding: 1px 6px; border-radius: 8px; font-weight: 700; }
+  .tab-badge.pending { background: var(--gris-borde); color: var(--gris-texto); }
+  .tab-badge.done { background: var(--verde-light); color: var(--verde-dark); }
+  .tab-panel { display: none; padding: 20px 0 0; }
+  .tab-panel.active { display: block; }
+
+  /* Checklist */
+  .checklist-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .checklist-title { font-size: 14px; font-weight: 700; }
+  .checklist-date { font-size: 12px; color: var(--gris-texto); }
+  .progress-bar-wrap { height: 6px; background: var(--gris-borde); border-radius: 3px; margin-bottom: 16px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: var(--verde); border-radius: 3px; transition: width 0.3s ease; }
+  .progress-label { font-size: 11px; color: var(--gris-texto); margin-top: -10px; margin-bottom: 14px; text-align: right; }
+  .checklist-items { display: flex; flex-direction: column; gap: 8px; }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gris-borde);
+    cursor: pointer;
+    transition: all 0.15s;
+    background: var(--blanco);
+  }
+  .check-item:hover { border-color: var(--verde); background: var(--verde-light); }
+  .check-item.checked { background: var(--verde-light); border-color: var(--verde); }
+  .check-item.checked .check-text { text-decoration: line-through; color: var(--gris-texto); }
+  .check-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid var(--gris-borde);
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: transparent;
+    transition: all 0.15s;
+  }
+  .check-item.checked .check-box { background: var(--verde); border-color: var(--verde); color: #fff; }
+  .check-text { font-size: 13px; line-height: 1.4; }
+  .check-file {
+    font-size: 11px;
+    color: var(--verde-dark);
+    font-family: monospace;
+    background: var(--verde-light);
+    padding: 1px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 2px;
+  }
+  .complete-banner {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: var(--verde);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 16px;
+    animation: fadeIn 0.3s ease;
+  }
+  .complete-banner.show { display: flex; }
+
+  /* ── TABLA ENTREGABLES ── */
+  .entregables-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .entregables-table th {
+    background: var(--oscuro);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .entregables-table th:first-child { border-radius: 8px 0 0 0; }
+  .entregables-table th:last-child { border-radius: 0 8px 0 0; }
+  .entregables-table td { padding: 10px 14px; border-bottom: 1px solid var(--gris-borde); vertical-align: top; }
+  .entregables-table tr:last-child td { border-bottom: none; }
+  .entregables-table tr:hover td { background: var(--gris-bg); }
+  .file-code {
+    font-family: monospace;
+    font-size: 12px;
+    background: var(--verde-light);
+    color: var(--verde-dark);
+    padding: 2px 7px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+  .session-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--oscuro);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .date-chip {
+    font-size: 11px;
+    color: var(--gris-texto);
+    background: var(--gris-bg);
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .noche-chip {
+    font-size: 10px;
+    color: #1565c0;
+    background: var(--azul-light);
+    padding: 1px 7px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 2px;
+  }
+
+  /* ── REGLAS ── */
+  .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .rules-grid { grid-template-columns: 1fr; } }
+  .rules-box { border-radius: 10px; padding: 16px 18px; }
+  .rules-box.yes { background: var(--verde-light); border: 1.5px solid var(--verde); }
+  .rules-box.no { background: #fce8e8; border: 1.5px solid #d32f2f; }
+  .rules-box-title { font-size: 13px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .rules-box.yes .rules-box-title { color: var(--verde-dark); }
+  .rules-box.no .rules-box-title { color: #c62828; }
+  .rules-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .rules-list li { font-size: 12px; display: flex; gap: 7px; align-items: flex-start; line-height: 1.4; }
+  .rules-list li::before { flex-shrink: 0; font-size: 13px; margin-top: 0px; }
+  .rules-box.yes .rules-list li::before { content: "✓"; color: var(--verde); font-weight: 700; }
+  .rules-box.no .rules-list li::before { content: "✗"; color: #c62828; font-weight: 700; }
+
+  /* ── FAQ ACORDEÓN ── */
+  .faq-item { border: 1.5px solid var(--gris-borde); border-radius: 8px; margin-bottom: 8px; overflow: hidden; transition: border-color 0.15s; }
+  .faq-item.open { border-color: var(--verde); }
+  .faq-q {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--blanco);
+    transition: background 0.12s;
+    user-select: none;
+  }
+  .faq-q:hover { background: var(--verde-light); }
+  .faq-icon { font-size: 16px; flex-shrink: 0; }
+  .faq-chevron { margin-left: auto; font-size: 12px; color: var(--gris-texto); transition: transform 0.2s; font-weight: 700; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); color: var(--verde); }
+  .faq-a { display: none; padding: 0 16px 14px 16px; font-size: 13px; color: var(--gris-texto); line-height: 1.6; background: var(--blanco); }
+  .faq-item.open .faq-a { display: block; animation: fadeIn 0.2s ease; }
+  .faq-steps { margin-top: 8px; padding-left: 16px; }
+  .faq-steps li { margin-bottom: 4px; font-size: 13px; }
+
+  /* ── CONSEJOS ── */
+  .tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .tip-card {
+    background: var(--gris-bg);
+    border-radius: 10px;
+    padding: 14px 16px;
+    border: 1.5px solid var(--gris-borde);
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .tip-card:hover { border-color: var(--verde); box-shadow: var(--sombra-hover); }
+  .tip-emoji { font-size: 20px; flex-shrink: 0; }
+  .tip-text { line-height: 1.5; color: var(--gris-texto); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--oscuro); color: #a0a8a0; text-align: center; padding: 20px; font-size: 12px; line-height: 1.7; }
+  footer strong { color: var(--verde-mid); }
+
+  /* ── REVEAL ANIMATION ── */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-logo">SENA</span>
+  <span class="topbar-sep">·</span>
+  <span>Informática: Word, Excel e Internet · Ficha 3616463</span>
+  <span class="topbar-sep">·</span>
+  <span class="topbar-chip">🌙 Modalidad virtual · Instituto María Auxiliadora</span>
+  <span class="topbar-sep" style="margin-left:auto"></span>
+  <span style="color:#888">Instructor: Julián A. Trujillo M.</span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📂 Drive del Curso</div>
+  <h1>Instrucciones de Uso<br><span>del Drive</span></h1>
+  <p class="hero-sub">Aquí encontrarás todos los materiales del curso y subirás tus actividades completadas. Sigue esta guía paso a paso.</p>
+  <a class="hero-link" href="https://drive.google.com/drive/folders/1d9qqX54jDc8JOdc-YMfOLa1b53Mpvfs9?usp=sharing" target="_blank">
+    🔗 Abrir Drive del Curso
+  </a>
+  <div style="margin-top:14px;">
+    <a class="hero-link" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25);" href="Internet_y_Colaborativas_AA4.html">
+      🌐 Ver AA4: Internet y Herramientas Colaborativas
+    </a>
+  </div>
+</div>
+
+<!-- NAV PILLS -->
+<nav class="nav-pills" aria-label="Secciones">
+  <a class="nav-pill" href="#estructura">📁 Estructura</a>
+  <a class="nav-pill" href="#como-subir">📤 Cómo subir</a>
+  <a class="nav-pill" href="#entregables">📋 Entregables</a>
+  <a class="nav-pill" href="#checklist">✅ Checklist</a>
+  <a class="nav-pill" href="#reglas">⚠️ Reglas</a>
+  <a class="nav-pill" href="#problemas">🔍 Problemas</a>
+  <a class="nav-pill" href="#consejos">💡 Consejos</a>
+</nav>
+
+<main>
+
+  <div class="aviso-virtual reveal">
+    <span style="font-size:18px;">🌙</span>
+    <p>Este curso se desarrolla en <strong>modalidad 100% virtual, jornada nocturna</strong> (7:30–8:30 pm u 8:30–9:30 pm). El Drive es el punto central para consultar material y entregar evidencias entre encuentros y días de trabajo autónomo. Ficha <strong>3616463</strong> — Instituto María Auxiliadora.</p>
+  </div>
+
+  <!-- ══════════════ ESTRUCTURA ══════════════ -->
+  <section class="section-card reveal" id="estructura">
+    <div class="section-header">
+      <div class="section-icon">📁</div>
+      <div>
+        <div class="section-title">Estructura de Carpetas del Drive</div>
+        <div class="section-subtitle">Haz clic en cada carpeta para expandir su contenido</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="tree" id="drive-tree">
+
+        <!-- Raíz -->
+        <div class="tree-item">
+          <div class="tree-row open" onclick="toggleTree(this)">
+            <div class="tree-toggle">−</div>
+            <span class="tree-icon">📁</span>
+            <span class="tree-label bold">Drive Principal — Informática: Word, Excel e Internet · Ficha 3616463</span>
+          </div>
+          <div class="tree-children open">
+
+            <!-- 1. PORTAFOLIO INSTRUCTOR -->
+            <div class="tree-item">
+              <div class="tree-row open" onclick="toggleTree(this)">
+                <div class="tree-toggle">−</div>
+                <span class="tree-icon">📚</span>
+                <span class="tree-label bold">1. PORTAFOLIO INSTRUCTOR</span>
+                <span class="tree-badge badge-read">Solo lectura</span>
+              </div>
+              <div class="tree-children open">
+
+                <!-- 1. INFO GENERAL -->
+                <div class="tree-item">
+                  <div class="tree-row" onclick="toggleTree(this)">
+                    <div class="tree-toggle">+</div>
+                    <span class="tree-icon">📁</span>
+                    <span class="tree-label">1. INFORMACIÓN GENERAL</span>
+                  </div>
+                  <div class="tree-children">
+                    <div class="tree-file">📄 <span>Carta de solicitud del curso — Instituto María Auxiliadora</span><span class="tree-arrow">Documento oficial</span></div>
+                    <div class="tree-file">📄 <span>Listado de aspirantes (30) — Instituto María Auxiliadora</span><span class="tree-arrow">Registro del grupo</span></div>
+                  </div>
+                </div>
+
+                <!-- 2. MATERIAL DE APOYO -->
+                <div class="tree-item">
+                  <div class="tree-row open" onclick="toggleTree(this)">
+                    <div class="tree-toggle">−</div>
+                    <span class="tree-icon">📁</span>
+                    <span class="tree-label">2. MATERIAL DE APOYO</span>
+                  </div>
+                  <div class="tree-children open">
+                    <div class="tree-item">
+                      <div class="tree-row" onclick="toggleTree(this)">
+                        <div class="tree-toggle">+</div>
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-label">1. WORD/</span>
+                      </div>
+                      <div class="tree-children">
+                        <div class="tree-file">🌐 1. Intro_word365.html</div>
+                        <div class="tree-file">🌐 2. Atajos_word365.html</div>
+                        <div class="tree-file">🌐 3. Grupos_Word_365.html</div>
+                      </div>
+                    </div>
+                    <div class="tree-item">
+                      <div class="tree-row" onclick="toggleTree(this)">
+                        <div class="tree-toggle">+</div>
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-label">2. POWERPOINT/</span>
+                      </div>
+                      <div class="tree-children">
+                        <div class="tree-file">🌐 1. Intro_powerpoint365.html</div>
+                        <div class="tree-file">🌐 2. Atajos_powerpoint365.html</div>
+                        <div class="tree-file">🌐 3. Grupos_PowerPoint_365.html</div>
+                      </div>
+                    </div>
+                    <div class="tree-item">
+                      <div class="tree-row" onclick="toggleTree(this)">
+                        <div class="tree-toggle">+</div>
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-label">3. EXCEL/</span>
+                      </div>
+                      <div class="tree-children">
+                        <div class="tree-file">🌐 0.0 - Introducción a Excel 365.html</div>
+                        <div class="tree-file">🌐 0.2 - Atajos_excel365.html</div>
+                        <div class="tree-file">🌐 Ejercicio 1 - Formato Básico (INICIO).html</div>
+                        <div class="tree-file">🌐 Ejercicio 4 - Fórmulas Básicas.html</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3. PLAN DE TRABAJO -->
+                <div class="tree-item">
+                  <div class="tree-row" onclick="toggleTree(this)">
+                    <div class="tree-toggle">+</div>
+                    <span class="tree-icon">📁</span>
+                    <span class="tree-label">3. Plan de Trabajo</span>
+                  </div>
+                  <div class="tree-children">
+                    <div class="tree-file">🌐 PLAN_TRABAJO_VIRTUAL_MariaAuxiliadora.html<span class="tree-arrow">⬅ Consultar siempre</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. PORTAFOLIO APRENDIZ -->
+            <div class="tree-item">
+              <div class="tree-row" onclick="toggleTree(this)">
+                <div class="tree-toggle">+</div>
+                <span class="tree-icon">👨‍🎓</span>
+                <span class="tree-label bold">2. PORTAFOLIO APRENDIZ</span>
+                <span class="tree-badge badge-upload">Subir aquí</span>
+              </div>
+              <div class="tree-children">
+                <div class="tree-item">
+                  <div class="tree-row" onclick="toggleTree(this)">
+                    <div class="tree-toggle">+</div>
+                    <span class="tree-icon">📁</span>
+                    <span class="tree-label">[Tu Nombre Completo]</span>
+                  </div>
+                  <div class="tree-children">
+                    <div class="tree-file">📁 1. WORD → <code>Actividad de Word (Fechas 4 y 5)</code></div>
+                    <div class="tree-file">📁 2. POWERPOINT → <code>Actividad de PowerPoint (Fechas 6 y 7)</code></div>
+                    <div class="tree-file">📁 3. EXCEL → <code>Actividad de Excel (Fechas 8 y 9)</code></div>
+                  </div>
+                </div>
+                <div class="tree-file" style="color:var(--gris-texto)">📁 [Nombre Compañero 1]</div>
+                <div class="tree-file" style="color:var(--gris-texto)">📁 [Nombre Compañero 2] … (30 carpetas en total)</div>
+              </div>
+            </div>
+
+            <!-- 3. DOCUMENTOS -->
+            <div class="tree-item">
+              <div class="tree-row leaf">
+                <div class="tree-toggle" style="visibility:hidden">·</div>
+                <span class="tree-icon">📄</span>
+                <span class="tree-label">3. DOCUMENTOS DESARROLLO DE LA FORMACIÓN</span>
+                <span class="tree-badge badge-read">Consulta</span>
+              </div>
+            </div>
+
+          </div><!-- /raíz children -->
+        </div><!-- /raíz -->
+      </div><!-- /tree -->
+    </div>
+  </section>
+
+  <!-- ══════════════ CÓMO SUBIR ══════════════ -->
+  <section class="section-card reveal" id="como-subir">
+    <div class="section-header">
+      <div class="section-icon">📤</div>
+      <div>
+        <div class="section-title">Cómo Crear tu Carpeta y Subir tus Actividades</div>
+        <div class="section-subtitle">Sigue los pasos en orden — usa las flechas o haz clic en los números</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <!-- Barra de puntos -->
+      <div class="stepper-progress" id="stepper-dots">
+        <div class="step-dot active" onclick="goStep(0)">1</div>
+        <div class="step-line" id="line-0"></div>
+        <div class="step-dot" onclick="goStep(1)">2</div>
+        <div class="step-line" id="line-1"></div>
+        <div class="step-dot" onclick="goStep(2)">3</div>
+        <div class="step-line" id="line-2"></div>
+        <div class="step-dot" onclick="goStep(3)">4</div>
+        <div class="step-line" id="line-3"></div>
+        <div class="step-dot" onclick="goStep(4)">5</div>
+      </div>
+
+      <!-- Paneles -->
+      <div class="stepper-content">
+        <div class="step-panel active" id="step-0">
+          <div class="step-card">
+            <div class="step-num">Paso 1 de 5</div>
+            <div class="step-title">🔗 Accede al Drive del Curso</div>
+            <p class="step-text">Abre el enlace principal del Drive. Puedes usar el botón del encabezado de esta página o escribir directamente la dirección en tu navegador.</p>
+            <div class="step-tip">💡 <span>Guarda el enlace en tus favoritos del navegador para no tener que buscarlo cada vez.</span></div>
+          </div>
+        </div>
+        <div class="step-panel" id="step-1">
+          <div class="step-card">
+            <div class="step-num">Paso 2 de 5</div>
+            <div class="step-title">🆕 Crea tu carpeta personal (Domingo 13 de septiembre)</div>
+            <p class="step-text">Dentro del Drive, entra a la carpeta <strong>2. PORTAFOLIO APRENDIZ</strong> y crea una carpeta nueva con tu <strong>nombre completo</strong> (ej: GarciaMariaFernanda). Esta actividad se realiza como trabajo autónomo, siguiendo lo explicado en el encuentro del sábado 12.</p>
+            <div class="step-tip">💡 <span>Usa nombre y apellidos completos, sin apodos ni abreviaciones, para que el instructor identifique fácilmente tu carpeta.</span></div>
+          </div>
+        </div>
+        <div class="step-panel" id="step-2">
+          <div class="step-card">
+            <div class="step-num">Paso 3 de 5</div>
+            <div class="step-title">📂 Crea las 3 subcarpetas fijas</div>
+            <p class="step-text">Dentro de tu carpeta personal, crea exactamente 3 subcarpetas: <strong>1. WORD</strong>, <strong>2. POWERPOINT</strong> y <strong>3. EXCEL</strong>. Todas tus evidencias del curso se organizan en estas 3 carpetas.</p>
+            <div class="step-tip">⚠️ <span>No crees subcarpetas adicionales ni cambies estos nombres — se usan para verificar el portafolio en el cierre del curso.</span></div>
+          </div>
+        </div>
+        <div class="step-panel" id="step-3">
+          <div class="step-card">
+            <div class="step-num">Paso 4 de 5</div>
+            <div class="step-title">⬆️ Sube tu archivo después de cada trabajo autónomo</div>
+            <p class="step-text">Al terminar cada actividad práctica (Word, PowerPoint o Excel), haz clic en <strong>"+ Nuevo"</strong> → <strong>"Subir archivo"</strong> → elige el archivo desde tu computador y súbelo a la subcarpeta correspondiente.</p>
+            <div class="step-tip">⚠️ <span>Si ya existe un archivo anterior, Google Drive te pedirá confirmación para reemplazarlo. Selecciona <strong>"Reemplazar"</strong>.</span></div>
+          </div>
+        </div>
+        <div class="step-panel" id="step-4">
+          <div class="step-card">
+            <div class="step-num">Paso 5 de 5</div>
+            <div class="step-title">✅ Verifica la subida</div>
+            <p class="step-text">Haz clic sobre el archivo recién subido para confirmar que se abre correctamente. Si es un documento, revisa que el contenido sea el correcto y no un archivo en blanco o dañado.</p>
+            <div class="step-tip">✅ <span>¡Listo! Puedes marcar el ítem correspondiente en el <strong>Checklist de Verificación</strong> más abajo.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div class="stepper-nav">
+        <button class="btn btn-outline" id="btn-prev" onclick="navStep(-1)" disabled>← Anterior</button>
+        <span class="step-counter" id="step-counter">Paso 1 de 5</span>
+        <button class="btn btn-primary" id="btn-next" onclick="navStep(1)">Siguiente →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ENTREGABLES ══════════════ -->
+  <section class="section-card reveal" id="entregables">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div>
+        <div class="section-title">Cronograma y Entregables por Fecha</div>
+        <div class="section-subtitle">Modalidad virtual · Jornada nocturna (7:30–8:30 pm u 8:30–9:30 pm)</div>
+      </div>
+    </div>
+    <div class="section-body" style="overflow-x:auto">
+      <table class="entregables-table">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Actividad</th>
+            <th>Entregable / subcarpeta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="session-num">1</span></td>
+            <td><span class="date-chip">Mar 8 sep</span><br><span class="noche-chip">🌙 Encuentro</span></td>
+            <td>Socialización del curso y plan de trabajo</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><span class="session-num">2</span></td>
+            <td><span class="date-chip">Sáb 12 sep</span><br><span class="noche-chip">🌙 Encuentro</span></td>
+            <td>Explicación del Drive (esta guía)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><span class="session-num">3</span></td>
+            <td><span class="date-chip">Dom 13 sep</span><br><span class="noche-chip" style="background:#fff3e0;color:#e07b00;">📝 Autónomo</span></td>
+            <td>Creación de carpeta personal</td>
+            <td><span class="file-code">[NombreCompleto]/ + 1. WORD/ + 2. POWERPOINT/ + 3. EXCEL/</span></td>
+          </tr>
+          <tr>
+            <td><span class="session-num">4</span></td>
+            <td><span class="date-chip">Lun 14 sep</span><br><span class="noche-chip">🌙 Encuentro</span></td>
+            <td>Word 365</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><span class="session-num">5</span></td>
+            <td><span class="date-chip">Mar 15 sep</span><br><span class="noche-chip" style="background:#fff3e0;color:#e07b00;">📝 Autónomo</span></td>
+            <td>Práctica de Word</td>
+            <td><span class="file-code">Subir a 1. WORD/</span></td>
+          </tr>
+          <tr>
+            <td><span class="session-num">6</span></td>
+            <td><span class="date-chip">Sáb 19 sep</span><br><span class="noche-chip">🌙 Encuentro</span></td>
+            <td>PowerPoint 365</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><span class="session-num">7</span></td>
+            <td><span class="date-chip">Dom 20 sep</span><br><span class="noche-chip" style="background:#fff3e0;color:#e07b00;">📝 Autónomo</span></td>
+            <td>Práctica de PowerPoint</td>
+            <td><span class="file-code">Subir a 2. POWERPOINT/</span></td>
+          </tr>
+          <tr>
+            <td><span class="session-num">8</span></td>
+            <td><span class="date-chip">Lun 21 sep</span><br><span class="noche-chip">🌙 Encuentro</span></td>
+            <td>Excel 365</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><span class="session-num">9</span></td>
+            <td><span class="date-chip">Mar 22 sep</span><br><span class="noche-chip" style="background:#fff3e0;color:#e07b00;">📝 Autónomo</span></td>
+            <td>Práctica de Excel</td>
+            <td><span class="file-code">Subir a 3. EXCEL/</span></td>
+          </tr>
+          <tr>
+            <td><span class="session-num">10</span></td>
+            <td><span class="date-chip">Mié 23 sep</span><br><span class="noche-chip" style="background:#ede7f6;color:#6a3fb5;">🏁 Cierre</span></td>
+            <td>Cierre de la formación y entrega de notas</td>
+            <td>Portafolio completo (1. WORD + 2. POWERPOINT + 3. EXCEL)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════════ CHECKLIST ══════════════ -->
+  <section class="section-card reveal" id="checklist">
+    <div class="section-header">
+      <div class="section-icon">✅</div>
+      <div>
+        <div class="section-title">Checklist de Verificación por Módulo</div>
+        <div class="section-subtitle">Marca cada ítem al completarlo — tu progreso se guarda en esta página</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="tabs-header" id="tabs-header">
+        <button class="tab-btn active" onclick="openTab(0)">1. Word <span class="tab-badge pending" id="tbadge-0">0/3</span></button>
+        <button class="tab-btn" onclick="openTab(1)">2. PowerPoint <span class="tab-badge pending" id="tbadge-1">0/3</span></button>
+        <button class="tab-btn" onclick="openTab(2)">3. Excel <span class="tab-badge pending" id="tbadge-2">0/3</span></button>
+        <button class="tab-btn" onclick="openTab(3)">Cierre <span class="tab-badge pending" id="tbadge-3">0/2</span></button>
+      </div>
+
+      <!-- Word -->
+      <div class="tab-panel active" id="tab-0">
+        <div class="checklist-header">
+          <div class="checklist-title">1. WORD</div>
+          <div class="checklist-date">Encuentro: lun 14 sep · Autónomo: mar 15 sep</div>
+        </div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-0" style="width:0%"></div></div>
+        <div class="progress-label" id="prog-label-0">0 de 3 completados</div>
+        <div class="checklist-items" data-tab="0">
+          <div class="check-item" onclick="toggleCheck(this,0)"><div class="check-box">✓</div><div class="check-text">Asistí al encuentro virtual de Word del 14 de septiembre</div></div>
+          <div class="check-item" onclick="toggleCheck(this,0)"><div class="check-box">✓</div><div class="check-text">Desarrollé la actividad práctica de Word en el día de trabajo autónomo (15 de septiembre)</div></div>
+          <div class="check-item" onclick="toggleCheck(this,0)"><div class="check-box">✓</div><div class="check-text">Subí el archivo a mi carpeta <strong>1. WORD/</strong> y verifiqué que se abre correctamente</div></div>
+        </div>
+        <div class="complete-banner" id="banner-0">🎉 ¡Módulo de Word completado! Continúa con PowerPoint.</div>
+      </div>
+
+      <!-- PowerPoint -->
+      <div class="tab-panel" id="tab-1">
+        <div class="checklist-header">
+          <div class="checklist-title">2. POWERPOINT</div>
+          <div class="checklist-date">Encuentro: sáb 19 sep · Autónomo: dom 20 sep</div>
+        </div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-1" style="width:0%"></div></div>
+        <div class="progress-label" id="prog-label-1">0 de 3 completados</div>
+        <div class="checklist-items" data-tab="1">
+          <div class="check-item" onclick="toggleCheck(this,1)"><div class="check-box">✓</div><div class="check-text">Asistí al encuentro virtual de PowerPoint del 19 de septiembre</div></div>
+          <div class="check-item" onclick="toggleCheck(this,1)"><div class="check-box">✓</div><div class="check-text">Desarrollé la presentación práctica en el día de trabajo autónomo (20 de septiembre)</div></div>
+          <div class="check-item" onclick="toggleCheck(this,1)"><div class="check-box">✓</div><div class="check-text">Subí el archivo a mi carpeta <strong>2. POWERPOINT/</strong> y verifiqué que se abre correctamente</div></div>
+        </div>
+        <div class="complete-banner" id="banner-1">🎉 ¡Módulo de PowerPoint completado! Continúa con Excel.</div>
+      </div>
+
+      <!-- Excel -->
+      <div class="tab-panel" id="tab-2">
+        <div class="checklist-header">
+          <div class="checklist-title">3. EXCEL</div>
+          <div class="checklist-date">Encuentro: lun 21 sep · Autónomo: mar 22 sep</div>
+        </div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-2" style="width:0%"></div></div>
+        <div class="progress-label" id="prog-label-2">0 de 3 completados</div>
+        <div class="checklist-items" data-tab="2">
+          <div class="check-item" onclick="toggleCheck(this,2)"><div class="check-box">✓</div><div class="check-text">Asistí al encuentro virtual de Excel del 21 de septiembre</div></div>
+          <div class="check-item" onclick="toggleCheck(this,2)"><div class="check-box">✓</div><div class="check-text">Desarrollé el ejercicio práctico en el día de trabajo autónomo (22 de septiembre)</div></div>
+          <div class="check-item" onclick="toggleCheck(this,2)"><div class="check-box">✓</div><div class="check-text">Subí el archivo a mi carpeta <strong>3. EXCEL/</strong> y verifiqué que se abre correctamente</div></div>
+        </div>
+        <div class="complete-banner" id="banner-2">🎉 ¡Módulo de Excel completado! Solo falta el cierre.</div>
+      </div>
+
+      <!-- Cierre -->
+      <div class="tab-panel" id="tab-3">
+        <div class="checklist-header">
+          <div class="checklist-title">Cierre y entrega de notas</div>
+          <div class="checklist-date">Miércoles 23 de septiembre</div>
+        </div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-3" style="width:0%"></div></div>
+        <div class="progress-label" id="prog-label-3">0 de 2 completados</div>
+        <div class="checklist-items" data-tab="3">
+          <div class="check-item" onclick="toggleCheck(this,3)"><div class="check-box">✓</div><div class="check-text">Verifiqué que mi carpeta personal tiene las 3 subcarpetas completas (1. WORD, 2. POWERPOINT, 3. EXCEL)</div></div>
+          <div class="check-item" onclick="toggleCheck(this,3)"><div class="check-box">✓</div><div class="check-text">Asistí al encuentro de cierre y recibí mi retroalimentación / nota final</div></div>
+        </div>
+        <div class="complete-banner" id="banner-3">🏆 ¡Portafolio completo! Has entregado todas las actividades del curso.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ REGLAS ══════════════ -->
+  <section class="section-card reveal" id="reglas">
+    <div class="section-header">
+      <div class="section-icon">⚠️</div>
+      <div>
+        <div class="section-title">Reglas de Uso del Drive</div>
+        <div class="section-subtitle">Es importante seguirlas para mantener el orden del portafolio</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="rules-grid">
+        <div class="rules-box yes">
+          <div class="rules-box-title">✅ SÍ puedes</div>
+          <ul class="rules-list">
+            <li>Leer y descargar todos los archivos del PORTAFOLIO INSTRUCTOR</li>
+            <li>Crear tu carpeta personal el domingo 13 de septiembre, siguiendo la guía</li>
+            <li>Subir tus actividades a <strong>tu carpeta</strong> en el PORTAFOLIO APRENDIZ</li>
+            <li>Ver y verificar tus propios archivos subidos</li>
+            <li>Reemplazar tu archivo si necesitas corregirlo</li>
+          </ul>
+        </div>
+        <div class="rules-box no">
+          <div class="rules-box-title">❌ NO puedes</div>
+          <ul class="rules-list">
+            <li>Modificar o eliminar archivos del PORTAFOLIO INSTRUCTOR</li>
+            <li>Subir archivos al PORTAFOLIO INSTRUCTOR</li>
+            <li>Acceder, modificar o eliminar archivos de carpetas de otros compañeros</li>
+            <li>Subir archivos en subcarpetas incorrectas o con nombres distintos a 1. WORD, 2. POWERPOINT, 3. EXCEL</li>
+            <li>Crear subcarpetas adicionales sin autorización del instructor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROBLEMAS FRECUENTES ══════════════ -->
+  <section class="section-card reveal" id="problemas">
+    <div class="section-header">
+      <div class="section-icon">🔍</div>
+      <div>
+        <div class="section-title">Solución de Problemas Frecuentes</div>
+        <div class="section-subtitle">Haz clic en cada pregunta para ver la solución</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>Aún no he creado mi carpeta personal</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>La creación de la carpeta personal es tu trabajo autónomo del domingo 13 de septiembre.</li>
+            <li>Entra a <strong>2. PORTAFOLIO APRENDIZ</strong> y crea una carpeta con tu nombre completo.</li>
+            <li>Si tienes dudas sobre cómo hacerlo, revisa de nuevo la sección "Cómo subir" de esta guía o contacta al instructor.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>No puedo subir archivos — el botón "Nuevo" no aparece o está desactivado</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>Asegúrate de estar dentro de <strong>tu carpeta personal</strong>, no en la de un compañero ni en el PORTAFOLIO INSTRUCTOR.</li>
+            <li>Verifica que tu cuenta de Google tiene permisos de edición en esa carpeta.</li>
+            <li>Intenta actualizar la página con F5 o cerrando y reabriendo el navegador.</li>
+            <li>Si el problema persiste, contacta al instructor con una captura de pantalla del error.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>Subí el archivo en la subcarpeta incorrecta</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>Haz clic derecho sobre el archivo → selecciona <strong>"Mover a"</strong>.</li>
+            <li>Navega hasta la subcarpeta correcta (1. WORD, 2. POWERPOINT o 3. EXCEL).</li>
+            <li>Confirma el movimiento. El archivo desaparecerá de la carpeta incorrecta.</li>
+            <li>Si no puedes moverlo, contacta al instructor para que te ayude.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>Necesito corregir y reemplazar un archivo ya subido</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>Sube el nuevo archivo con el <strong>mismo nombre exacto</strong>.</li>
+            <li>Google Drive te preguntará si deseas reemplazar la versión anterior → selecciona <strong>"Reemplazar"</strong>.</li>
+            <li>Alternativamente, elimina el archivo anterior y luego sube el nuevo.</li>
+            <li>Verifica que el archivo actualizado sea el correcto haciendo clic para abrirlo.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>El archivo subido no se abre o aparece como dañado</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>Verifica que el archivo se abre correctamente en tu computador <strong>antes</strong> de volverlo a subir.</li>
+            <li>Confirma que el formato es el correcto: <code>.docx</code>, <code>.pptx</code> o <code>.xlsx</code>.</li>
+            <li>Si el archivo está bien en tu equipo, elimínalo del Drive y súbelo nuevamente.</li>
+            <li>Si el problema persiste, avisa al instructor.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-icon">❓</span>
+          <span>No pude conectarme al encuentro virtual nocturno</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <ol class="faq-steps">
+            <li>Avisa al instructor lo antes posible por el canal de comunicación acordado.</li>
+            <li>Consulta el material de la sesión en la carpeta <strong>2. MATERIAL DE APOYO</strong> del Drive.</li>
+            <li>El trabajo autónomo del día siguiente sigue siendo obligatorio, incluso si no asististe al encuentro.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONSEJOS ══════════════ -->
+  <section class="section-card reveal" id="consejos">
+    <div class="section-header">
+      <div class="section-icon">💡</div>
+      <div>
+        <div class="section-title">Consejos para el Curso Virtual</div>
+        <div class="section-subtitle">Recomendaciones para aprovechar al máximo el proceso de formación nocturna</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="tips-grid">
+        <div class="tip-card"><span class="tip-emoji">📋</span><span class="tip-text"><strong>Consulta el Plan de Trabajo Virtual</strong> antes de cada encuentro para saber qué se va a explicar y qué debes practicar después.</span></div>
+        <div class="tip-card"><span class="tip-emoji">📶</span><span class="tip-text"><strong>Verifica tu conexión a internet</strong> antes de cada encuentro nocturno para evitar interrupciones.</span></div>
+        <div class="tip-card"><span class="tip-emoji">📂</span><span class="tip-text"><strong>Crea tu carpeta personal a tiempo</strong> (13 de septiembre) para no atrasarte con las entregas siguientes.</span></div>
+        <div class="tip-card"><span class="tip-emoji">✅</span><span class="tip-text"><strong>No dejes el trabajo autónomo para después.</strong> Realízalo el mismo día asignado, mientras el tema está fresco.</span></div>
+        <div class="tip-card"><span class="tip-emoji">🔍</span><span class="tip-text"><strong>Confirma la subida</strong> abriendo el archivo directamente desde Drive. No asumas que se subió bien sin verificar.</span></div>
+        <div class="tip-card"><span class="tip-emoji">💾</span><span class="tip-text"><strong>Guarda copias locales</strong> de todos tus trabajos en tu computador. El Drive es un respaldo, no el único lugar.</span></div>
+        <div class="tip-card"><span class="tip-emoji">📧</span><span class="tip-text"><strong>Contacta al instructor</strong> si tienes dudas técnicas o problemas con el Drive. No dejes pasar los inconvenientes.</span></div>
+        <div class="tip-card"><span class="tip-emoji">🌙</span><span class="tip-text"><strong>Organiza tu espacio en casa</strong> para el horario nocturno: buena luz, sin distracciones y con el computador cargado.</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <strong>SENA — Centro Agroempresarial y Desarrollo Pecuario del Huila – Regional Huila – Garzón</strong><br>
+  Programa: Informática: Microsoft Word, Excel e Internet · Ficha 3616463<br>
+  Grupo: Instituto María Auxiliadora · Modalidad virtual (jornada nocturna)<br>
+  Instructor: Julián Andrés Trujillo Morales · Septiembre de 2026<br>
+  <em>Conocimiento para todos los colombianos</em>
+</footer>
+
+<script>
+  /* ── ÁRBOL ── */
+  function toggleTree(row) {
+    if (row.classList.contains('leaf')) return;
+    const children = row.nextElementSibling;
+    const toggle = row.querySelector('.tree-toggle');
+    const isOpen = row.classList.contains('open');
+    row.classList.toggle('open', !isOpen);
+    if (children) children.classList.toggle('open', !isOpen);
+    if (toggle) toggle.textContent = isOpen ? '+' : '−';
+  }
+
+  /* ── STEPPER ── */
+  let currentStep = 0;
+  const totalSteps = 5;
+
+  function goStep(n) { currentStep = n; renderStep(); }
+
+  function navStep(dir) {
+    currentStep = Math.max(0, Math.min(totalSteps - 1, currentStep + dir));
+    renderStep();
+  }
+
+  function renderStep() {
+    document.querySelectorAll('.step-panel').forEach((p, i) => p.classList.toggle('active', i === currentStep));
+    document.querySelectorAll('.step-dot').forEach((d, i) => {
+      d.classList.remove('active', 'done');
+      if (i === currentStep) d.classList.add('active');
+      else if (i < currentStep) d.classList.add('done');
+    });
+    for (let i = 0; i < totalSteps - 1; i++) {
+      const line = document.getElementById('line-' + i);
+      if (line) line.classList.toggle('done', i < currentStep);
+    }
+    document.getElementById('step-counter').textContent = 'Paso ' + (currentStep + 1) + ' de ' + totalSteps;
+    document.getElementById('btn-prev').disabled = currentStep === 0;
+    document.getElementById('btn-next').disabled = currentStep === totalSteps - 1;
+  }
+
+  /* ── TABS ── */
+  function openTab(n) {
+    document.querySelectorAll('.tab-btn').forEach((b, i) => b.classList.toggle('active', i === n));
+    document.querySelectorAll('.tab-panel').forEach((p, i) => p.classList.toggle('active', i === n));
+  }
+
+  /* ── CHECKLIST ── */
+  const tabTotals = [3, 3, 3, 2];
+
+  function toggleCheck(item, tabIdx) {
+    item.classList.toggle('checked');
+    updateProgress(tabIdx);
+  }
+
+  function updateProgress(tabIdx) {
+    const container = document.querySelector('.checklist-items[data-tab="' + tabIdx + '"]');
+    const total = tabTotals[tabIdx];
+    const done = container.querySelectorAll('.check-item.checked').length;
+    const pct = Math.round((done / total) * 100);
+
+    document.getElementById('prog-' + tabIdx).style.width = pct + '%';
+    document.getElementById('prog-label-' + tabIdx).textContent = done + ' de ' + total + ' completados';
+
+    const badge = document.getElementById('tbadge-' + tabIdx);
+    badge.textContent = done + '/' + total;
+    badge.className = 'tab-badge ' + (done === total ? 'done' : 'pending');
+
+    const banner = document.getElementById('banner-' + tabIdx);
+    banner.classList.toggle('show', done === total);
+  }
+
+  /* ── FAQ ── */
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  /* ── REVEAL ON SCROLL ── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* ── NAV PILLS ACTIVE ── */
+  const sections = document.querySelectorAll('section[id]');
+  const pills = document.querySelectorAll('.nav-pill');
+  const pillObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        pills.forEach(p => p.classList.toggle('active', p.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => pillObserver.observe(s));
+</script>
+</body>
+</html>
